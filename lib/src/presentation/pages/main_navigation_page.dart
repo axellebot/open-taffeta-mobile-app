@@ -43,7 +43,7 @@ class MainNavigationPage extends StatelessWidget {
       bottomNavigationBar: BottomAppBar(
         color: Theme.of(context).primaryColor,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             MenuButton(),
           ],
