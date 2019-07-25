@@ -206,16 +206,6 @@ class BuzzerLocalizationsEN implements BuzzerLocalizations {
   @override
   String get appErrorUserNotFound => 'User not found';
 
-  /// --------------------------------------------------------------------------
-  ///                            App Errors
-  /// --------------------------------------------------------------------------
-
-  @override
-  String get errorNotYetImplemented => 'Not yet implemented';
-
-  @override
-  String get errorNotSupported => 'Not supported';
-
   @override
   String get appErrorAuthForbidden => 'Access forbidden';
 
@@ -230,6 +220,16 @@ class BuzzerLocalizationsEN implements BuzzerLocalizations {
 
   @override
   String get appErrorServerSideProblem => 'A server side error occured';
+
+  /// --------------------------------------------------------------------------
+  ///                            App Errors
+  /// --------------------------------------------------------------------------
+
+  @override
+  String get errorNotYetImplemented => 'Not yet implemented';
+
+  @override
+  String get errorNotSupported => 'Not supported';
 
   /// --------------------------------------------------------------------------
   ///                            Other Exceptions
