@@ -166,7 +166,7 @@ abstract class _Envelop {
 
 @JsonSerializable()
 class DataEnvelop<T> extends _Envelop {
-  @_GenericListConverter()
+  @_GenericConverter()
   T data;
 
   DataEnvelop({
@@ -183,7 +183,7 @@ class DataEnvelop<T> extends _Envelop {
 
 @JsonSerializable()
 class DataArrayEnvelop<T> extends _Envelop {
-  @_GenericListConverter()
+  @_GenericConverter()
   List<T> data;
 
   int total;
@@ -203,8 +203,8 @@ class DataArrayEnvelop<T> extends _Envelop {
 
 /// Example of model with GenericCollection
 /// https://github.com/dart-lang/json_serializable/blob/ee2c5c788279af01860624303abe16811850b82c/example/lib/json_converter_example.dart
-class _GenericListConverter<T> implements JsonConverter<T, Object> {
-  const _GenericListConverter();
+class _GenericConverter<T> implements JsonConverter<T, Object> {
+  const _GenericConverter();
 
   @override
   T fromJson(Object json) {
